@@ -180,3 +180,12 @@
 ### Preview Player Controls Restored
 - Restored native video controls (play/pause/progress bar) on Arrange and Finalize preview players.
 - Kept restricted options to avoid PiP/download behavior by setting `controlsList="nodownload noplaybackrate"` and `disablePictureInPicture`.
+
+### Accent Color Unification + Theme-Dependent Lock/Duplicate Colors
+- Removed random lock/duplicate icon color cycling by normalizing all cycle variants to one shared accent color.
+- Reworked accent styling in the UI to use theme tokens instead of hardcoded blue literals.
+- Accent behavior is now theme-specific:
+  - Olive Dark: olive-tinted accent.
+  - Midnight Blue: blue accent.
+  - Sand Light: beige accent with darker accent text for readability.
+- Updated key accent surfaces (badges, active states, dropzone highlights, tab highlights, primary buttons, and progress fill) to follow the active theme accent.
